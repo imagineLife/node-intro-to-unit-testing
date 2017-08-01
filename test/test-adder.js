@@ -23,18 +23,19 @@ describe('adder', function() {
     });
   });
 
-  it('should raise error if args not numbers', function() {
-    // range of bad inputs where not both are numbers
-    const badInputs = [
-      ['a', 1],
-      ['1', 2],
-      [2, false]
-    ];
-    // prove that an error is raised for bad inputs
-    badInputs.forEach(function(input) {
-      (function() {
-          adder(input[0], input[1])
-      }).should.throw(Error);
-    });
-  });
+  // it('should raise error if args not numbers', function() {
+  //   // range of bad inputs where not both are numbers
+  //   const badInputs = [
+  //     ['a', 1],
+  //     ['1', 2],
+  //     [2, false]
+  //   ];
+  //   // prove that an error is raised for bad inputs
+  //   badInputs.forEach(function(input) {
+  //     (function() {
+  //         adder(input[0], input[1])
+  //     }).should.throw(Error);
+  //   });
+  // });
+
 });

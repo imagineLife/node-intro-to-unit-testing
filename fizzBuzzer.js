@@ -1,6 +1,7 @@
-module.exports = function(num) {
+function fizzBuzzer(num){
 	if (typeof num !== 'number') {
 		throw Error('`num` must be a number');
+		// return '`num` must be a number';
 	}
 	if (num % 15 === 0) {
 		return 'fizz-buzz';
@@ -15,3 +16,5 @@ module.exports = function(num) {
 		return num;
 	}
 }
+
+module.exports = fizzBuzzer;
